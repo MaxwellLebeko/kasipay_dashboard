@@ -283,9 +283,9 @@ elif selected_view == "Market Analysis":
     
     col1, col2 = st.columns(2)
     
-    with col1:
+     with col1:
     # Key Insights
-    st.markdown("---")
+     st.markdown("---")
     st.subheader("🎯 Key Insights & Recommendations")
     
     col1, col2 = st.columns(2)
