@@ -376,7 +376,7 @@ with col1:
         showlegend=False
     )
     
-    # Add KasiPay users highlight
+   # Add KasiPay users highlight
     kasipay_users = market_df[market_df['Uses_KasiPay']]
     if not kasipay_users.empty:
         fig.add_trace(go.Histogram(
@@ -389,9 +389,12 @@ with col1:
     fig.update_layout(barmode='overlay')
     st.plotly_chart(fig, use_container_width=True)
 
-elif selected_view == "Onboarding Funnel": 
-st.header("Onboarding Funnel Analysis")
+elif selected_view == "Onboarding Funnel":
+    st.header("🔄 Onboarding Funnel Analysis")
+    
     col1, col2 = st.columns([2, 1])
+    
+    with col1:
     
 with col1:
         # Funnel chart
