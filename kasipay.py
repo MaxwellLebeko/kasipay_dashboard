@@ -389,12 +389,12 @@ with col1:
     fig.update_layout(barmode='overlay')
     st.plotly_chart(fig, use_container_width=True)
 
-   elif selected_view == "Onboarding Funnel":
+elif selected_view == "Onboarding Funnel":
     st.header(" Onboarding Funnel Analysis")
     
     col1, col2 = st.columns([2, 1])
     
-    with col1:
+with col1:
         # Funnel chart
         fig = go.Figure(go.Funnel(
             y=funnel_df['Funnel_Stage'],
