@@ -111,7 +111,7 @@ def generate_kasipay_data():
     
     review_data = {
         'Review_ID': [f'R{i:03d}' for i in range(1, 151)],
-        'Date': pd.date_range(start='2024-01-01', periods=150, freq='D'),
+        'Date': pd.date_range(start='2025-01-01', periods=150, freq='D'),
         'Rating': np.random.choice([1, 2, 3, 4, 5], 150, p=[0.1, 0.15, 0.2, 0.3, 0.25]),
         'Review_Text': np.random.choice(review_texts, 150),
         'Sentiment_Score': np.random.normal(0.35, 0.5, 150),
@@ -125,7 +125,7 @@ def generate_kasipay_data():
     review_df = pd.DataFrame(review_data)
     
     # Weekly metrics data
-    dates = pd.date_range(start='2024-01-01', periods=24, freq='W')
+    dates = pd.date_range(start='2025-01-01', periods=24, freq='W')
     intervention_week = 13
     
     weekly_users = []
@@ -191,7 +191,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("### Key Dates")
-    st.info(" **Onboarding Improved:** March 25, 2024")
+    st.info(" **Onboarding Improved:** October 25, 2025")
     st.warning(" **Target Market:** Township Informal Traders")
     
     st.markdown("---")
