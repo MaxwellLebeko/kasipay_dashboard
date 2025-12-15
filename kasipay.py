@@ -391,7 +391,6 @@ with col1:
 
 elif selected_view == "Onboarding Funnel": 
 st.header("Onboarding Funnel Analysis")
-    
     col1, col2 = st.columns([2, 1])
     
 with col1:
